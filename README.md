@@ -6,8 +6,8 @@ This is a theme that automatically switches between Latte and Moca themes by fol
 This is a theme for [Markdown Viewer](https://github.com/simov/markdown-viewer), made by myself and with Chat GPT4-o (on [duckduckgo](https://duck.ai)) for very very base.
 
 ## Color scheme
-Color palette: Catppuccin's palette (latte and mocha)  
-Color accent: mauve (well, only links actually use it but it's here)  
+Color palette: [Catppuccin's palette](https://catppuccin.com/palette/) (latte and mocha)  
+Color accent: Mauve (well, only links actually use it but it's here)  
 
 ## Notes 
 - Some `!important` tags are required at few spots and I don't know why, help is welcome  
