@@ -1,0 +1,337 @@
+/* Theme for [Markdown Viewer](https://github.com/simov/markdown-viewer)
+ * Made by LukasMnt
+ * Very very base made with Chat GPT4-o on https://duck.ai 
+ * Color theme: Catppuccin's palette (latte and mocha)
+ * Accent color: mauve (well, only links actually use it but it's here)
+ *
+ * Description:
+ * This is a theme that automatically switches between Latte and Moca themes by following browser's theme. This theme has been made for Markdown Viewer because of the lack of good themes that follow systheme's theme to me.
+ *
+ * Notes:
+ * Some `!important` tags are required at few spots and I don't know why, help is welcome
+ * It may be incomplete because of my basic usage of it.
+ * Adding variables would make it better for further edition
+ * Sorry for my poor frenchy english
+ * */
+
+/* ------------- Fonts ------------- */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* ------------- Fonts ------------- */
+
+
+/* ------------- Global appearance ------------- */
+/* there are a few `!important` tags here, don't know why I have to put them :'( */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+mark {
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+kbd {
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+body {
+  min-height: 100vh; /* Minimum height of the body is 100% of the viewport height */
+  font-family: 'Noto Serif', Arial, sans-serif;
+}
+
+table {
+  border-collapse: separate;
+  width: 100%;
+  border-radius: 6px; /* Rounded corners */
+  overflow: hidden; /* Ensures that the corners are rounded */
+  border-spacing: 0px;
+}
+
+table th {
+  border-bottom: 2px solid #e1e4e8;
+  padding: 8px;
+}
+
+table td {
+  border-right: 1px solid #e1e4e8;
+  padding: 8px;
+}
+
+table tr td:last-of-type {
+  border-right: none; /* Remove right border for the last cell in each row */
+}
+
+blockquote {
+  padding: 1px 10px;
+  margin: 16px 0;
+}
+
+code { /* inline code `example`*/
+  text-shadow: none !important;
+  border-radius: 3px; /* Rounded corners */
+  padding: 0px 4px !important; /* Padding for better spacing */
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace; /* Monospace font for code */
+  font-size: 90%; /* Slightly smaller font size */
+}
+
+pre { /* big code block */
+  border-radius: 6px; /* Rounded corners */
+  padding: 8px; /* Padding inside the box */
+  overflow: auto; /* Allow scrolling if content overflows */
+  margin: 16px 0; /* Margin around the code block */
+}
+
+pre code { /* code in big code blocks */
+  border: 0px; /* Border color for code in blocks */
+  font-size: 100%; /* Normal font size */
+  background-color: transparent; /* Ensure the code inside has a transparent background */
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace !important; /* Monospace font for code */
+}
+/* ------------- Global appearance ------------- */
+
+
+/* ------------- Dark colors ------------- */
+@media (prefers-color-scheme: dark) { /* mocha */
+  body {
+    color: #cdd6f4;  /* text */
+    background-color: #1e1e2e; /* base */
+  }
+
+  h1{
+    color:#f38ba8;  /* red */
+  }
+
+  h2{
+    color:#fab387;  /* peach */
+  }
+
+  h3{
+    color:#f9e2af;  /* yellow */
+  }
+
+  h4{
+    color:#a6e3a1;  /* green */
+  }
+
+  h5{
+    color:#74c7ec;  /* sapphire */
+  }
+
+  h6{
+    color:#b4befe;  /* Lavender */
+  }
+
+  a {
+    color: #cba6f7;  /* mauve */
+  }
+
+  mark {
+    background: #1e1e2e; /* base */
+  }
+
+  kbd {
+    background: #1e1e2e; /* base */
+  }
+
+  table {
+    border: 1px solid #313244; /* surface 0 */
+  }
+
+  table th {
+    border-bottom: 2px solid #313244; /* surface 0 */
+    background: #11111b;  /* crust */
+  }
+
+  table td { /* text */
+    border-right: 1px solid #313244; /* surface 0 */
+  }
+
+  table tr:nth-child(odd) td {
+    background: #181825;  /* mantle */
+  }
+
+  blockquote {
+    background: #181825;  /* mantle */
+    border-left: 5px solid #313244; /* surface 0 */
+  }
+
+  pre {
+    background: #181825; /* mantle */
+    border: 1px solid #313244;  /* surface 0 */
+  }
+
+  code {
+    background: #181825;  /* mantle */
+    color: #c9d1d9;
+    border: 1px solid #313244; /* surface 0 */
+  }
+
+  /* Bash variables */
+  .language-bash .variable {
+    color: #fab387; /* peach */
+  }
+}
+/* ------------- Dark colors ------------- */
+
+
+/* ------------- Light colors ------------- */
+@media (prefers-color-scheme: light) {
+  body {
+    color: #4c4f69;  /* text */
+    background-color: #eff1f5; /* base */
+  }
+
+  h1{
+    color:#d20f39;  /* red */
+  }
+
+  h2{
+    color:#fe640b;  /* peach */
+  }
+
+  h3{
+    color:#df8e1d;  /* yellow */
+  }
+
+  h4{
+    color:#40a02b;  /* green */
+  }
+
+  h5{
+    color:#209fb5;  /* sapphire */
+  }
+
+  h6{
+    color:#7287fd;  /* Lavender */
+  }
+
+  a {
+    color: #8839ef;  /* mauve */
+  }
+
+  mark {
+    background: #eff1f5; /* base */
+  }
+
+  kbd {
+    background: #eff1f5; /* base */
+  }
+
+  table {
+    border: 1px solid #ccd0da;  /* surface 0 */
+  }
+
+  table th {
+    border-bottom: 2px solid #ccd0da; /* surface 0 */
+    background-color: #dce0e8;  /* crust */
+  }
+
+  table td {
+    border-right: 1px solid #ccd0da; /* surface 0 */
+  }
+
+  table tr:nth-child(odd) td {
+    background: #e6e9ef;  /* mantle */
+  }
+
+  blockquote {
+    background: #e6e9ef;  /* mantle */
+    border-left: 5px solid #ccd0da;  /* surface 0 */
+  }
+
+  pre {
+    background: #e6e9ef;  /* mantle */
+    border: 1px solid #ccd0da;  /* surface 0 */
+  }
+
+  code {
+    background: #e6e9ef;  /* mantle */
+    color: #4c4f69; /* text */
+    border: 1px solid #ccd0da;  /* surface 0 */
+  }
+
+  /* Bash variables */
+  .language-bash .variable {
+    color: #fe640b; /* peach */
+  }
+}
+/* ------------- Light colors ------------- */
