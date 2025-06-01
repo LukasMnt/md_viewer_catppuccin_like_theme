@@ -11,6 +11,7 @@ Color accent: mauve (well, only links actually use it but it's here)
 
 ## Notes 
 - Some `!important` tags are required at few spots and I don't know why, help is welcome  
+- In blocks of code, the first line is shifted on the right, don't know why too
 - It may be incomplete because of my basic usage of it.
 - Adding variables would make it better for further edition
 - Sorry for my poor frenchy english
@@ -23,3 +24,16 @@ You can simply download the file, clone the repository or just copy the content 
 2. Select CUSTOM for Content Theme
 3. Upload the `catppuccin.css` file
 4. Select `Auto` for the Color Scheme
+
+# Features with footages
+## Light and dark theme
+![mixed](footages/black_n_white.png)
+
+## Beautiful colors (thanks catppuccin)
+- Colorful titles to recognize them (especially the small one)
+- Nice tables
+- Great blocs and inline code
+
+## Need something more?
+- Add it yourself, css is easy to understand
+- Notify me!
