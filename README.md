@@ -27,12 +27,13 @@ You can simply download the file, clone the repository or just copy the content 
 
 # Features with footages
 ## Light and dark theme
-![mixed](footages/black_n_white.png)
+![black and white theme](footages/black_n_white.png)
 
 ## Beautiful colors (thanks catppuccin)
 - Colorful titles to recognize them (especially the small one)
 - Nice tables
-- Great blocs and inline code
+- Great blocs and inline code  
+![Everything, just here](footages/example.png)
 
 ## Need something more?
 - Add it yourself, css is easy to understand
