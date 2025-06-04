@@ -19,7 +19,7 @@ Color accent: Mauve (well, only links actually use it but it's here)
 # Install
 ## Downoad the `catppuccin.css` file
 You can simply download the file, clone the repository or just copy the content of the file and save it on you computer
-## Follow the [instructions](https://github.com/simov/markdown-viewer?tab=readme-ov-file#custom-theme) givent by simov on his repository
+## Follow the [instructions](https://github.com/simov/markdown-viewer?tab=readme-ov-file#custom-theme) given by simov in his repository
 1. Go to the Advanced Options and click on Settings
 2. Select CUSTOM for Content Theme
 3. Upload the `catppuccin.css` file
