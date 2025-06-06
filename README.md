@@ -36,6 +36,9 @@ You can simply download the file, clone the repository or just copy the content 
   
 ![Everything, just here](footages/example.png)
 
+## To add
+- [ ] better checkboxes
+
 ## Need something more?
 - Add it yourself, css is easy to understand
 - Notify me!
