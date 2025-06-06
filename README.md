@@ -1,4 +1,4 @@
-# Catppuccin like theme for Markdown Viewer
+# Catppuccin-like theme for Markdown Viewer
 ## Description
 This is a theme that automatically switches between Latte and Moca themes by following browser's theme. This theme has been made for Markdown Viewer because of the lack of good themes that follow systheme's theme to me.  
 
