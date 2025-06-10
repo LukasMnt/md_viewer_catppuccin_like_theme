@@ -166,6 +166,14 @@ pre code { /* code in big code blocks */
   background-color: transparent; /* Ensure the code inside has a transparent background */
   font-family: 'JetBrains Mono', 'Courier New', Courier, monospace !important; /* Monospace font for code */
 }
+
+ul.contains-task-list{
+  list-style-type: none; /* Remove bullets in tasks lists */
+  padding: 0; /* Remove padding */
+  margin: 0;  /* Remove margins */
+}
+
+
 /* ------------- Global appearance ------------- */
 
 
