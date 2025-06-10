@@ -196,20 +196,23 @@ input.task-list-item-checkbox:checked {
   background: var(--color_accent);
 }
 
-input.task-list-item-checkbox:after { /* checkmark */
+input.task-list-item-checkbox:after { /* content in the empty box */
+  /* creates a box with bottom and right borders visible (hidden when unchecked) and rotates it to makthe ckeckmark */
+  /* 
   content: ' ';
   position: relative;
   left: 40%;
   top: 20%;
   width: 15%;
   height: 40%;
-  border: solid #000; /* check color */
+  border: solid #000;
   border-width: 0 2px 2px 0;
   transform: rotate(50deg);
-  display: none;
+  display: none; 
+  */
 }
 
-input.task-list-item-checkbox:checked:after {
+input.task-list-item-checkbox:checked:after { /* content in the checked box */
   display: block;
 }
 /* Checkboxes */
