@@ -91,6 +91,10 @@
 
 /* ------------- Global appearance ------------- */
 /* there are a few `!important` tags here, don't know why I have to put them :'( */
+:root{
+  --color_accent: var(--mauve);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
@@ -175,20 +179,21 @@ ul.contains-task-list{
 
 /* Checkboxes */
 input.task-list-item-checkbox {
+  height: 16px;
+  width:  16px;
+  background: var(--surface0);
+  border: 1px solid #000;
+  border-radius: 3px;
+  vertical-align: middle;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: 0;
-  background: #F00;
-  height: 16px;
-  width: 16px;
-  border: 1px solid #000;
-  vertical-align: middle;
 }
 
 input.task-list-item-checkbox:checked {
-  background: #0F0;
+  background: var(--color_accent);
 }
 
 input.task-list-item-checkbox:after { /* checkmark */
@@ -213,6 +218,12 @@ input.task-list-item-checkbox:checked:after {
 
 /* ------------- Light colors ------------- */
 @media (prefers-color-scheme: light) {
+  :root {
+    --text:     #4c4f69;
+    --surface0: #ccd0da;
+    --mauve:    #8839ef;
+  }
+  
   body {
     color: #4c4f69;  /* text */
     background-color: #eff1f5; /* base */
@@ -297,6 +308,12 @@ input.task-list-item-checkbox:checked:after {
 
 /* ------------- Dark colors ------------- */
 @media (prefers-color-scheme: dark) { /* mocha */
+  :root {
+    --text:     #cdd6f4;
+    --surface0: #313244;
+    --mauve:    #cba6f7;
+  }
+  
   body {
     color: #cdd6f4;  /* text */
     background-color: #1e1e2e; /* base */
