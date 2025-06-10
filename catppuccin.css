@@ -215,6 +215,17 @@ ul.contains-task-list{
   list-style-type: none; /* Remove bullets in tasks lists */
   padding: 0; /* Remove padding */
   margin: 0;  /* Remove margins */
+  display: flex;
+  flex-direction: column;
+}
+
+li.task-list-item{
+  order: 1;
+}
+
+li.task-list-item:has(input.task-list-item-checkbox:checked){
+  order: 2;
+  /* text-decoration: line-through; *//* strike out text in checklist (Md Viewer puts a space before the name of the item in the list, it will be crossed too, we can't do really anything about that) */
 }
 
 /* Checkboxes */
@@ -222,7 +233,7 @@ input.task-list-item-checkbox {
   height: 16px;
   width:  16px;
   background: var(--mantle);
-  border: 1px solid #000;
+  border: 2px solid var(--text);
   border-radius: 3px;
   vertical-align: middle;
   cursor: pointer;
@@ -233,7 +244,7 @@ input.task-list-item-checkbox {
 }
 
 input.task-list-item-checkbox:checked {
-  background: var(--color_accent);
+  background: var(--contrast_accent);
 }
 
 input.task-list-item-checkbox:after { /* content in the empty box */
@@ -293,6 +304,8 @@ input.task-list-item-checkbox:checked:after { /* content in the checked box */
     --base:       #eff1f5;
     --mantle:     #e6e9ef;
     --crust:      #dce0e8;
+
+    --contrast_accent: color-mix(in srgb, var(--color_accent), white 50%);
   }
 }
 /* ------------- Light colors ------------- */
@@ -327,6 +340,8 @@ input.task-list-item-checkbox:checked:after { /* content in the checked box */
     --base:       #1e1e2e;
     --mantle:     #181825;
     --crust:      #11111b;
+
+    --contrast_accent: color-mix(in srgb, var(--color_accent), black 20%);
   }
 }
 /* ------------- Dark colors ------------- */
