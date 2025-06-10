@@ -10,10 +10,9 @@ Color palette: [Catppuccin's palette](https://catppuccin.com/palette/) (latte an
 Color accent: Mauve (well, only links actually use it but it's here)  
 
 ## Notes 
-- Some `!important` tags are required at few spots and I don't know why, help is welcome  
 - In blocks of code, the first line is shifted on the right, don't know why too
 - It may be incomplete because of my basic usage of it.
-- Adding variables would make it better for further edition
+- Some `!important` tags are required at few spots and I don't know why, help is welcome  
 - Sorry for my poor frenchy english
 
 # Install
@@ -37,7 +36,7 @@ You can simply download the file, clone the repository or just copy the content 
 ![Everything, just here](footages/example.png)
 
 ## To add
-- [ ] better checkboxes
+- [x] better checkboxes (must be able to do better)
 
 ## Need something more?
 - Add it yourself, css is easy to understand
