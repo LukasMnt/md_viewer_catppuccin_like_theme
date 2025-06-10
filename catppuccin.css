@@ -178,10 +178,10 @@ table tr:nth-child(odd) td {
 }
 
 blockquote {
-  padding: 1px 10px;
-  margin: 16px 0;
+  padding:  1px 10px;
+  margin:   16px 0;
   background: var(--mantle);
-  border-left: 5px solid #ccd0da;  /* surface 0 */
+  border-left: 5px solid var(--surface0);*/
 }
 
 code { /* inline code `example`*/
@@ -221,7 +221,7 @@ ul.contains-task-list{
 input.task-list-item-checkbox {
   height: 16px;
   width:  16px;
-  background: var(--surface0);
+  background: var(--mantle);
   border: 1px solid #000;
   border-radius: 3px;
   vertical-align: middle;
