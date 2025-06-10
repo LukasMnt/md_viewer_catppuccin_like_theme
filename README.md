@@ -1,4 +1,4 @@
-# Catppuccin like theme for Markdown Viewer
+# Catppuccin-like theme for Markdown Viewer
 ## Description
 This is a theme that automatically switches between Latte and Moca themes by following browser's theme. This theme has been made for Markdown Viewer because of the lack of good themes that follow systheme's theme to me.  
 
@@ -19,7 +19,7 @@ Color accent: Mauve (well, only links actually use it but it's here)
 # Install
 ## Downoad the `catppuccin.css` file
 You can simply download the file, clone the repository or just copy the content of the file and save it on you computer
-## Follow the [instructions](https://github.com/simov/markdown-viewer?tab=readme-ov-file#custom-theme) givent by simov on his repository
+## Follow the [instructions](https://github.com/simov/markdown-viewer?tab=readme-ov-file#custom-theme) given by simov in his repository
 1. Go to the Advanced Options and click on Settings
 2. Select CUSTOM for Content Theme
 3. Upload the `catppuccin.css` file
@@ -35,6 +35,9 @@ You can simply download the file, clone the repository or just copy the content 
 - Great blocs and inline code
   
 ![Everything, just here](footages/example.png)
+
+## To add
+- [ ] better checkboxes
 
 ## Need something more?
 - Add it yourself, css is easy to understand
