@@ -188,7 +188,7 @@ code { /* inline code `example`*/
   text-shadow: none !important;
   border-radius: 3px; /* Rounded corners */
   padding: 0px 4px !important; /* Padding for better spacing */
-  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace; /* Monospace font for code */
+  font-family: 'JetBrains Mono', monospace; /* Monospace font for code */
   font-size: 90%; /* Slightly smaller font size */
   background: var(--mantle);
   color: var(--text);
@@ -208,23 +208,23 @@ pre code { /* code in big code blocks */
   border: 0px; /* Border color for code in blocks */
   font-size: 100%; /* Normal font size */
   background-color: transparent; /* Ensure the code inside has a transparent background */
-  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace !important; /* Monospace font for code */
+  font-family: 'JetBrains Mono', monospace !important; /* Monospace font for code */
 }
 
 ul.contains-task-list{
   list-style-type: none; /* Remove bullets in tasks lists */
   padding: 0; /* Remove padding */
   margin: 0;  /* Remove margins */
-  display: flex;
-  flex-direction: column;
+  display: flex;  /* flex to choose the order of the items */
+  flex-direction: column; /* flex in column because it's a list */
 }
 
 li.task-list-item{
-  order: 1;
+  order: 1; /* unchecked items display first */
 }
 
 li.task-list-item:has(input.task-list-item-checkbox:checked){
-  order: 2;
+  order: 2; /* checked items display second */
   /* text-decoration: line-through; *//* strike out text in checklist (Md Viewer puts a space before the name of the item in the list, it will be crossed too, we can't do really anything about that) */
 }
 
