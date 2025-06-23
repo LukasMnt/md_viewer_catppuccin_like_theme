@@ -8,7 +8,7 @@
  * This is a theme that automatically switches between Latte and Moca themes by following browser's theme. This theme has been made for Markdown Viewer because of the lack of good themes that follow systheme's theme to me.
  *
  * Notes:
- * Some `!important` tags are required at few spots and I don't know why, help is welcome
+ * Some `!important` tags are required at few spots and I don't know why, help is welcome. Edit: I guess these are also set by Markdow Viewer which creates a conflict.
  * It may be incomplete because of my basic usage of it.
  * Sorry for my poor frenchy english
  * */
@@ -272,6 +272,11 @@ input.task-list-item-checkbox:checked:after { /* content in the checked box */
 .language-bash .variable {
   color: var(--peach);
 }
+
+#_toc { /* Table of content */
+  border-right: 2px solid var(--surface0) !important;
+}
+
 /* ------------- Global appearance ------------- */
 
 
