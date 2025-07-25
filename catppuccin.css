@@ -209,6 +209,7 @@ pre code { /* code in big code blocks */
   font-size: 100%; /* Normal font size */
   background-color: transparent; /* Ensure the code inside has a transparent background */
   font-family: 'JetBrains Mono', monospace !important; /* Monospace font for code */
+  padding: 0px !important; /* Padding for better spacing */
 }
 
 ul.contains-task-list{

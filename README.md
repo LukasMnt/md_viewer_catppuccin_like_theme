@@ -10,7 +10,7 @@ Color palette: [Catppuccin's palette](https://catppuccin.com/palette/) (latte an
 Color accent: Mauve (well, only links actually use it but it's here)  
 
 ## Notes 
-- In blocks of code, the first line is shifted on the right, don't know why too
+- ~In blocks of code, the first line is shifted on the right, don't know why too~ Done, I forgot to reset padding :]
 - It may be incomplete because of my basic usage of it.
 - Some `!important` tags are required at few spots and I don't know why, help is welcome  
 - Sorry for my poor frenchy english
